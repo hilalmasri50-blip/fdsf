@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Studio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1 class="logo">Nova Studio</h1>
+        <a class="button" href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">Modern web experiences</p>
+        <h2>We build websites that feel fast, polished, and memorable.</h2>
+        <p>
+          From one-page launches to full product sites, we design and ship
+          responsive websites your customers love.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#services">View services</a>
+          <a class="button button-secondary" href="#about">About us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="section container">
+        <h3>Services</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>Design Systems</h4>
+            <p>Clean, accessible interfaces that scale with your brand.</p>
+          </article>
+          <article class="card">
+            <h4>Front-End Development</h4>
+            <p>Performance-focused builds with modern HTML, CSS, and JS.</p>
+          </article>
+          <article class="card">
+            <h4>SEO Foundations</h4>
+            <p>Technical setup and content structure for better discoverability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h3>About Nova Studio</h3>
+          <p>
+            We're a small web team helping startups and local businesses launch
+            beautiful online homes quickly.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h3>Get in touch</h3>
+        <p>Tell us what you want to build, and we'll send a plan in 48 hours.</p>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Project goals
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="button" type="submit">Send message</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nova Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
